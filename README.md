@@ -1,61 +1,32 @@
-# restaurant #
-Gestion de restaurant with ionic
+Projet developement Mobile
 
-## Architecture du projet ##
-
-![Test Image 8]()
-
-
-### Description : ###
-Mini Application permettant la gestion d'un restaurant et de ses plats .
+Mohamed Lemine CHEIKH ABDALLAHI	
+mouhamed.lemine7@yahoo.fr
+DIC3TR
 
 
-### Creation du projet ###
 
-##### ionic start restaurant tabs ####
-Ensuite il faut choisir un projet angular
+-------------------------------------------------------------
+Dans le dossier vous trouverez 2 sous-dossiers: 
+-l'application ionic au nom de "restaurant-app"
+-et l'api strapi au nom de "my-project-strapi"
 
-### Creation des services ###
+Commencez par se placer au niveau du dossier de l'api et lancez la commande:
+npm start
 
-Nous allons créer plusieurs services en utilisant la commande line interface de ionic.
-Nous allons commencer par génerer nos services dans le dossier service
+Après celà, faites la meme commande au niveau du dossier de l'application ionic
 
-##### ionic g service services/plat #####
-##### ionic g service services/restaurant #####
-##### ionic g service services/auth (Permet de gerer la connexion et l'inscription) #####
-##### ionic g service services/utils (Permet d'afficher un toast) #####
+Accédez à l'api dans le navigateur par l'url: localhost/1337/admin    et entrez les données de connexion qui sont: "MLCA" et "Passer2020"
+Pour accéder à l'appli ionic veuillez entrer l'url: localhost/4200
 
-### Creation des modéles ###
+Veuillez vous assurer que la localisation est activé au niveau de votre navigateur.
 
-##### ionic g class models/user (permet de persister les utilisateurs) #####
-##### ionic g class models/plat (permet de persister les plats dans strapi) #####
-##### ionic g class models/restaurant (permet de persister les restaurants) ##### 
+Pour une meilleure visibilité, Veuillez passer en mode inspecter.
 
-### integration de L'API strapi ###
-Pour installer strapi  nous allons utiliser la commande <b>npx create-strapi-app restaurant-api --quickstart<b>
+L'application ionic au lancement, affiche la page de connexion, veuillez entrer les infos de connexion d'un des users prédéfinis dans l'api strapi ou vous enregistrer vous meme.
 
-Démarrer strapi avec la commande <b>strapi start</b> dans le repertoire du projet strapi precedemment crée.
-Consulter la documentation officielle <a href="https://strapi.io/documentation/3.0.0-beta.x/getting-started/introduction.html">Cliquez ici</a>
+La page d'acceuil est à l'URL: localhost/tabs/tab1 (en cas de probleme de connexion)
 
-Aprés creation des content type il faudra changer les rôles er permissions pour permettre aux applications de pouvoir faire des transactions
-
-### Integratation capacitor et AGM (Angular google maps) ###
-
-<ul>
-<li>Pour capacitor il faut suivre les instructions ici <a href="https://capacitor.ionicframework.com/docs/getting-started/">cliquez ici</a></li>
-<li>Pour AGM il faut l'installer le plugin d'abord</li>
-<ul>
-    <li>npm install @agm/core --save</>
-    <li>Il faut creer unecle api google maps</li>
-    <li>importer capacitor plugins and importer le dans le module dans la page ou veut l'utiliser dans notre cas dans la page ajouter Restaurant,   
-    </li>
-    <li>Importer le odule agmcore dans le fichier ajouter module de restaurant.</li>
-   </ul>
-</li>
-
-</ul>
-</ul>
-
-
+Nous avons cinq pages dans l'application: Accueil, Plats, Menu du jour, Restaurants et Carte des Restaurants. Nous vous souhaitons une excellente navigation.
 
 
