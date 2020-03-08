@@ -7,9 +7,9 @@ DIC3TR
 
 
 -------------------------------------------------------------
-Dans le dossier vous trouverez 2 sous-dossiers: 
--l'application ionic au nom de "restaurant-app"
--et l'api strapi au nom de "my-project-strapi"
+Dans le projet vous trouverez 2 linked repositories: 
+-l'application ionic au nom de "Application Ionic"
+-et l'api strapi au nom de "Api Strapi"
 
 Commencez par se placer au niveau du dossier de l'api et lancez la commande:
 npm start
