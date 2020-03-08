@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title><ion-icon name="map"></ion-icon>Carte des Restaurants</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <agm-map [latitude]="currentLat" [longitude]="currentLng"  [zoom]="zoom">
+    <agm-marker *ngFor="let location of locations" [latitude]="location.lat" [longitude]="location.lng" [label]="{color:'blue', text: location.name}" [iconUrl]="icon"></agm-marker>
+    <agm-marker [latitude]="currentLat" [longitude]="currentLng" [label]="{color:'red', text: 'Ma position'}" [iconUrl]="iconPosition"> </agm-marker> 
+  </agm-map>
+</ion-content>
